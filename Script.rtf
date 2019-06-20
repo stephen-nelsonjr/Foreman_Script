@@ -2,10 +2,13 @@
 
 sudo su
 Su - foreman -s /bin/bash
-sudo yum install -y gcc ruby-devel zlib-devel
+Echo yes | sudo yum install -y gcc ruby-devel zlib-devel
 gem install nokogiri
 sudo gem install nokogiri -v 1.6.8.1
-sudo yum install gcc-c++
-sudo yum install postgresql-devel
-bundle install
-sudo touch /usr/share/foreman/tmp/restart.txt
+echo yes | sudo yum install gcc-c++
+echo yes | sudo yum install postgresql-devel
+# cd
+# cp Gemfile.in Gemfile
+# echo 
+# bundle install
+# sudo touch /usr/share/foreman/tmp/restart.txt
